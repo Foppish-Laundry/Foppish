@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FOP Laundry Services</title>
+    <style>
+        #video-background {
+    position: fixed;
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -100;
+    background-size: cover;
+}
+
+#video-background video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ddd;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        article {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            body {
+                font-size: 18px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="video-background">
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="https://player.vimeo.com/external/575134408.sd.mp4?s=d1e87d9bef11bbe95f702a62346dbf969882c25c&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+        </video>
+    </div>
+    
+    <header>
+        <h1>FOP Laundry Services</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Services and Pricing</a></li>
+                <li><a href="#foppish-repeat">Foppish Repeat</a></li>
+                <li><a href="#partner">Partner</a></li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#login">Log in</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="services">
+            <h2>Services</h2>
+            <article id="wash-fold">
+                <h3>Wash & Fold</h3>
+                <p>Wash & Fold is the perfect service to use if you want to avoid doing laundry and save your time and your sanity.</p>
+                <p>Foppish will pickup, clean, and deliver your laundry right back to your door. Your clothes get their own machine, are cleaned according to your preferences, and delivered neatly folded – we even pair your socks.</p>
+                <p>Let Foppish do your laundry for you so you can focus on more important things.</p>
+            </article>
+            <!-- Other services can be added here -->
+        </section>
+        <section id="foppish-repeat">
+            <h2>Foppish Repeat</h2>
+            <p>Our simplest plan. Priced by the bag and always free pickup & delivery. Enjoy savings of up to 52% vs. Pay-As-You-Go.</p>
+            <p>As low as $1.39 / lb. Priced by the bag, as low as $50/bag. If it fits in the bag, we’ll clean it. Always free pickup & delivery. Waived Service Fee on all orders. Standard turnaround. Next-Day Rush Service available for $9.95.</p>
+            <!-- Other pricing plans can be added here -->
+        </section>
+        <!-- Other sections can be added here -->
+    </main>
+    <footer>
+        <p>© 2024 FOP Laundry Services</p>
+    </footer>
+    <script>
+        window.onload = function() {
+            var navLinks = document.querySelectorAll('nav ul li a');
+            navLinks.forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    alert("Please contanct us a Foppish.laundry@outlook.com for more information.");
+                });
+            });
+        };
+        </script>
+        
+</body>
+</html>
